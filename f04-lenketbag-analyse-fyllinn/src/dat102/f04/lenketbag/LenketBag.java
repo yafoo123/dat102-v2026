@@ -46,14 +46,26 @@ public class LenketBag<T> implements BagADT<T> {
 	@Override
 	public boolean add(T newEntry) {
 		//TODO - Legger inn først i listen siden det er enklest
-		return false;
+        Node ny = new Node (newEntry);
+        ny.neste = forste;
+        forste = ny;
+        antall++;
+		return true;
 	}
 
 	@Override
 	public T remove() {
 		//TODO - Vi må først sjekke om tom siden det da ikke er noe å fjerne
 		//TODO - Fjerner den første siden det er enklest
-		return null;
+
+        if (antall == 0){
+            return null;
+        }
+
+        T temp = forste.data;
+        forste = forste.neste;
+        antall--;
+		return temp;
 	}
 
 	@Override
@@ -61,10 +73,17 @@ public class LenketBag<T> implements BagADT<T> {
 		//TODO - Forslag til fremgangsmåte:
 		// 1) Finn referanse til den som skal fjernes, null hvis ikke funnet.
 		//   Lage en privat hjelpemetode Node finnNode(T entry) for dette?
+        Node p = finnNode(anEntry);
+
 		// 2) Hvis ikke funnet, så return false.
+        if(p == null){
+            return false;
+        }
+
 		// 3) Triks: Fjerning kan gjøres ved å overskrive data med data fra
 		//   første node, og deretter fjerne første node.
-		
+		p.data = forste.data;
+        forste = forste.neste;
 		return false;
 	}
 	
@@ -72,7 +91,16 @@ public class LenketBag<T> implements BagADT<T> {
 	 * Returnerer referanse til node hvis funnet, ellers null.
 	 */
 	private Node finnNode(T entry) {
-		return null;
+		Node p = forste;
+        while(p != null){
+            if(p.data.equals(entry)){
+                return p;
+            }
+            else{
+                p = p.neste;
+            }
+        }
+        return null;
 	}
 
 	@Override

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/dat102-v2026.iml" filepath="$PROJECT_DIR$/.idea/dat102-v2026.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f01-figurer-ordnetpar-losning/f01-figurer-ordnetpar-losning.iml" filepath="$PROJECT_DIR$/f01-figurer-ordnetpar-losning/f01-figurer-ordnetpar-losning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f02-comparable-tabellbag-fyllinn/f02-comparable-tabellbag-fyllinn.iml" filepath="$PROJECT_DIR$/f02-comparable-tabellbag-fyllinn/f02-comparable-tabellbag-fyllinn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f02-comparable-tabellbag-losning/f02-comparable-tabellbag-losning.iml" filepath="$PROJECT_DIR$/f02-comparable-tabellbag-losning/f02-comparable-tabellbag-losning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f03-node-nodelenke-fyllinn/f03-node-nodelenke-fyllinn.iml" filepath="$PROJECT_DIR$/f03-node-nodelenke-fyllinn/f03-node-nodelenke-fyllinn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f03-node-nodelenke-resultat/f03-node-nodelenke-resultat.iml" filepath="$PROJECT_DIR$/f03-node-nodelenke-resultat/f03-node-nodelenke-resultat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f04-lenketbag-analyse-fyllinn/f04-lenketbag-analyse-fyllinn.iml" filepath="$PROJECT_DIR$/f04-lenketbag-analyse-fyllinn/f04-lenketbag-analyse-fyllinn.iml" />
+    </modules>
+  </component>
+</project>
